@@ -116,7 +116,7 @@ a:hover {color: #F58220}
 
 .button2 { color: #fff; background: #006e04; border-radius: 3px; display: inline-block; font-size: 20px; min-width: 280px; height: 50px; text-align: center; text-decoration: none; padding: 12px 5px; font-weight: 700; transition: background .3s, color .3s; }
 .sub-h2{font-family: 'UTMAvoBold';}
-h2 { font-family: 'UTMAvoBold'; color: #353B45; font-size: 35px;}
+h2 { font-family: 'UTMAvoBold'; color: #353B45; font-size: 25px;}
 h3 { font-size: 20px; font-weight: 600; color: #F58220; font-family: 'UTMAvoBold';}
 h4 { font-size: 17px; font-weight: 600; color: #726D6D ; font-family: 'UTMAvoBold';}
 
@@ -302,7 +302,7 @@ ul.stepper li a .label {
 	body { font-size: 18px; line-height: 28px; }
 	.inner { max-width: 1240px; }
 	.button { font-size: 18px; padding: 12px 5px 16px; min-width: 310px; letter-spacing: 1px; }
-	.button:hover { background: #d84830; color: #fff; } }
+	.button:hover { background: #d84830; color: #fff; }
 	.button2 { font-size: 18px; padding: 12px 5px 16px; min-width: 310px; letter-spacing: 1px; }
 	.button2:hover { background: #d84830; color: #fff; }
 }

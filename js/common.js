@@ -65,7 +65,7 @@ this},r._applyDataApi=function(){var e={};t("[data-match-height], [data-mh]").ea
 /*equal height box*/
 $(function() {
     $('.matchHeight').matchHeight();
-	$('.dt-product-frame').matchHeight();
+	//$('.dt-product-frame').matchHeight();
 });
 
 /* accordion */

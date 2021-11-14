@@ -51,7 +51,7 @@ a:hover {
 
 /*index_main*/
 .index_main .slick-dots {
-  bottom: 15px;
+  bottom: 0;
   left: 10px;
   text-align: left;
 }
@@ -208,11 +208,14 @@ h4 {
   border-radius: 16px;
   padding: 27px 12px;
   font-size: 17px;
+  text-align: center;
 }
 .dt-box img {
-  height: 100%;
-  max-height: 65px;
-  margin-left: 10px;
+  width: 100%;
+  max-width: 220px;
+}
+.dt-box p {
+  text-align: left;
 }
 .dt-box2 {
   box-shadow: 0px 18px 20px rgba(0, 0, 0, 0.15);
@@ -233,10 +236,8 @@ h4 {
   font-family: "UTMAvoBold";
 }
 .dt-line {
-  width: 100px;
-  background: #043b72;
-  padding: 3px;
-  margin-top: 17px;
+  margin-top: 30px;
+  border-top: 1px solid #f4f6f6;
 }
 
 footer .ft-social img {
@@ -304,12 +305,14 @@ footer .ft-social img {
 
 .stepper {
   font-family: "UTMAvoBold";
+  margin-bottom: 6px;
 }
 
 ul.stepper li a {
-  padding: 10px;
-  text-align: center;
+  padding: 10px 25px;
   cursor: text;
+  display: flex;
+  align-items: center;
 }
 ul.stepper li a:hover {
   color: #726d6d;
@@ -347,7 +350,7 @@ ul.stepper li a:hover {
   align-items: flex-start;
   background: #ffffff;
   box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.07);
-  border-radius: 42px;
+  border-radius: 16px;
   margin-bottom: 15px;
 }
 
@@ -390,7 +393,8 @@ ul.stepper li a .label {
   display: inline-block;
   font-weight: bold;
   font-size: 12px;
-  line-height: 1.9rem;
+  /* line-height: 1.9rem; */
+  line-height: normal;
 }
 
 .stepper-vertical li a .label {
@@ -406,7 +410,7 @@ ul.stepper li a .label {
 .stepper-vertical li:not(:last-child):after {
   position: absolute;
   top: 3.4rem;
-  left: 1.7rem;
+  left: 2.5rem;
   width: 2px;
   height: calc(100% - 30px);
   content: "";
@@ -414,23 +418,28 @@ ul.stepper li a .label {
 }
 
 .dt-video-title {
-  background: #fff;
+  background: #f0b26b;
+  border-radius: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.dt-video-text,
+/* .dt-video-text,
 .dt-video-button {
   padding: 0;
-}
+} */
 .dt-video-text p {
-  padding: 20px 0;
-  font-size: 12px;
+  padding: 15px 0;
+  font-size: 14px;
   font-family: "UTMAvoBold";
   line-height: 17px;
   margin-bottom: 0;
+  color: #19457a;
 }
 .dt-video-button {
   justify-content: center;
   align-items: center;
   display: flex;
+  padding: 0;
 }
 .dt-video-button p {
   font-size: 16px;
@@ -439,10 +448,11 @@ ul.stepper li a .label {
   margin-bottom: 0;
 }
 .dt-video-button a {
-  padding: 3px 12px 7px;
+  padding: 20px 16px;
   background: #f58220;
   color: #fff;
   border-radius: 16px;
+  display: inline-block;
 }
 .dt-video-button a:hover {
   opacity: 0.9;
@@ -899,6 +909,9 @@ footer .ft-phone {
 .hidden-sp-max-600 {
   display: none;
 }
+.dt-pdb {
+  padding-bottom: 15px;
+}
 
 @media (min-width: 420px) {
   footer .ft_social a {
@@ -912,8 +925,14 @@ footer .ft-phone {
   }
 }
 
+@media (min-width: 560px) {
+  .index_main .slick-dots {
+    bottom: 15px;
+  }
+}
+
 @media (min-width: 580px) {
-  .dt-video-button p {
+  /*   .dt-video-button p {
     font-size: 20px;
     line-height: 30px;
   }
@@ -924,11 +943,11 @@ footer .ft-phone {
     padding: 30px 10px;
     font-size: 20px;
     line-height: 30px;
-  }
-  .stepper-vertical li {
+  } */
+  /*  .stepper-vertical li {
     margin-bottom: 25px;
-  }
-  ul.stepper li a .circle {
+  } */
+  /* ul.stepper li a .circle {
     width: 50px;
     height: 50px;
     line-height: 2.9rem;
@@ -944,7 +963,7 @@ footer .ft-phone {
     top: 4.44rem;
     left: 2.19rem;
     height: calc(100% - 40px);
-  }
+  } */
 }
 
 @media (min-width: 600px) {
@@ -961,7 +980,7 @@ footer .ft-phone {
     display: block;
   }
   .dt-box {
-    padding: 27px 22px;
+    padding: 27px 25px;
   }
 }
 
@@ -987,13 +1006,7 @@ footer .ft-phone {
   .downapp-sp {
     display: none;
   }
-  .dt-step {
-    max-width: 490px;
-    float: right;
-    width: 100%;
-    display: block;
-    margin-top: 0;
-  }
+
   .baohiem,
   .ungdung {
     margin-top: 66px;
@@ -1018,16 +1031,16 @@ footer .ft-phone {
     width: 390px;
   }
   .dt-row {
-    margin-left: -68px;
+    margin-left: -40px;
     margin-top: 50px;
   }
   .dt-col-pading {
-    padding-left: 68px;
-    padding-bottom: 68px;
+    padding-left: 40px;
+    padding-bottom: 50px;
   }
-  .dt-video-button a {
+  /* .dt-video-button a {
     padding: 10px 25px 16px;
-  }
+  } */
   h2 {
     font-size: 40px;
     font-weight: bold;
@@ -1038,6 +1051,9 @@ footer .ft-phone {
   }
   h4 {
     font-size: 22px;
+  }
+  .dt-pdb {
+    padding-bottom: 50px;
   }
 }
 @media (min-width: 1200px) {
@@ -1084,5 +1100,21 @@ footer .ft-phone {
   }
   .dt-product-info {
     margin-top: 0;
+  }
+  .dt-box p {
+    font-size: 20px;
+  }
+  .dt-video {
+    padding-right: 50px;
+  }
+  .dt-step {
+    /*     max-width: 490px;
+    width: 100%;
+    display: block; */
+    margin-top: 0;
+  }
+  .dt-video-title {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

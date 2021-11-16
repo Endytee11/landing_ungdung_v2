@@ -415,6 +415,7 @@ ul.stepper li a .label {
   height: calc(100% - 30px);
   content: "";
   background-color: #f58220;
+  z-index: -1;
 }
 
 .dt-video-title {
